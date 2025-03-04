@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-white
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Add this to your CSS file */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+/* App.css */
+
+.Toastify__toast-container {
+  width: 350px;
+}
+
+.Toastify__toast {
+  border-radius: 12px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent for glass effect */
+  backdrop-filter: blur(12px); /* Glassmorphism blur */
+  color: #f0f0f0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Elevated shadow */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Modern color themes for toast types */
+.Toastify__toast--success {
+  background: linear-gradient(145deg, #4caf50, #81c784);
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(145deg, #e57373, #ef5350);
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(145deg, #29b6f6, #0288d1);
+}
+
+.Toastify__toast--warning {
+  background: linear-gradient(145deg, #ffb74d, #f57c00);
+}
+
+.Toastify__close-button {
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+/* Subtle hover effect for close button */
+.Toastify__close-button:hover {
+  opacity: 1;
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
